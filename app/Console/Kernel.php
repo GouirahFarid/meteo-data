@@ -12,7 +12,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        /*
+         * Run every 15 minutes to collect meteo data from the API
+         *
+         * */
+        $schedule->command('meteo:collect')->everyFifteenMinutes();
     }
 
     /**
