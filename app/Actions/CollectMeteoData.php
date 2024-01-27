@@ -6,7 +6,13 @@ use Illuminate\Support\Facades\Http;
 
 class CollectMeteoData
 {
-    public function handle(string $latitude , string $longitude)
+    /**
+     * Collect meteo data from the API
+     * @param string $latitude
+     * @param string $longitude
+     * @return array
+     */
+    public function handle(string $latitude , string $longitude): array
     {
         return Http::meteoApi()->get('', [
             'latitude' => $latitude,
