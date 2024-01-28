@@ -4,6 +4,9 @@ namespace App\Actions;
 
 use Illuminate\Support\Facades\Http;
 
+/**
+ * CollectMeteoData Action : Collect meteo data from the API
+ */
 class CollectMeteoData
 {
     /**
