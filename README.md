@@ -30,6 +30,7 @@ php artisan serve
 
 npm run dev
 ```
+
 ### collect data using artisan command
 ```
 /* 
