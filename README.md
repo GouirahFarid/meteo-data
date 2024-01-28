@@ -18,7 +18,7 @@ php artisan key:generate
 ```
 ### database setup
 ```
-create database meteo_app
+create database meteo_db
 
 update .env file with database credentials
 
@@ -49,11 +49,11 @@ php artisan schedule:run
 ```
 ### collect  data using api route (GET) (queue job)
 ```
-/api/collect
-
-/* run queue worker */
+/* run queue worker (set QUEUE_CONNECTION=database) */
 
 php artisan queue:work
+
+/api/collect
 ```
 ###
 
