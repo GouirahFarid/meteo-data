@@ -6,7 +6,7 @@
 ```
 git clone repository
 
-cd meteo-app
+cd meteo-data
 
 npm install
 
