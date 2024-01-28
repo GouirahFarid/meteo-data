@@ -15,6 +15,7 @@ class MeteoDataController extends Controller
     }
 
     /**
+     * Show meteo data
      * @return Response
      */
     public function show(): Response
@@ -25,6 +26,7 @@ class MeteoDataController extends Controller
     }
 
     /**
+     * Update meteo data
      * @param UpdateMeteoDataRequest $request
      * @return RedirectResponse
      */
@@ -34,12 +36,4 @@ class MeteoDataController extends Controller
         return to_route('meteo.show');
     }
 
-    /**
-     * @return RedirectResponse
-     */
-    public function generate(): RedirectResponse
-    {
-        $this->meteoService->collect();
-        return to_route('meteo.show');
-    }
 }

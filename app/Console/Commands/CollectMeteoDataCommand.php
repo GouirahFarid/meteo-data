@@ -6,6 +6,9 @@ use App\Services\MeteoService;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
+/**
+ *  CollectMeteoData Command : Collecting meteo data for given latitude and longitude
+ */
 class CollectMeteoDataCommand extends Command implements ShouldQueue
 {
     /**

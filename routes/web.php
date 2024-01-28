@@ -20,6 +20,5 @@ use Inertia\Inertia;
 Route::prefix('/')->name('meteo.')->controller(MeteoDataController::class)->group(function () {
     Route::get('',  'show')->name('show');
     Route::put('',  'update')->name('update');
-    Route::post('',  'generate')->name('generate');
 });
 
